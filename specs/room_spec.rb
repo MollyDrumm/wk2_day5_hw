@@ -29,4 +29,10 @@ class RoomTest < MiniTest::Test
     assert_equal(2, check)
   end
 
+  def test_check_out_guest
+    @room1.check_out_guest(@guest1)
+    check = @room1.songs.length
+    assert_equal(1, check)
+  end
+
 end

@@ -15,4 +15,8 @@ class Room
     @songs << song
   end
 
+  def check_out_guest(guest)
+    @guests.pop
+  end
+
 end
